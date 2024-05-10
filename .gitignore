@@ -1,0 +1,15 @@
+### Example user template template
+### Example user template
+
+
+*.iml
+out
+gen
+.env
+poetry.lock
+working
+runs
+.idea
+yolov8n.pt
+./detect_russian_road_signs/models
+./detect_russian_road_signs/dataset
