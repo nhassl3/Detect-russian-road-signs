@@ -20,7 +20,6 @@ def download_dataset() -> None:
     # Download dataset
     # If dataset already exists ignore this step
     if not os.path.exists(WORKING_DIR):
-        print(True)
         rf = Roboflow(api_key=API_KEY)  # API KEY in __init__ detect_russian_road_signs module
         project = rf.workspace("ksenia-komlach").project(PROJECT_NAME)
         project.version(VERSION).download("yolov8")
@@ -35,13 +34,11 @@ def download_dataset() -> None:
 
     # Download pretrained weights
     if not os.path.exists(WORKING_DIR / 'yolo8s.pt'):
-        print(True)
         with requests.get('https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8s.pt') as response:
             with open(WORKING_DIR / "yolo8s.pt", "wb") as file:
                 file.write(response.content)
 
     if not os.path.exists(CONFIGURATION):
-        print(True)
         data = {
             "names": CLASSES,
             "nc": len(CLASSES),

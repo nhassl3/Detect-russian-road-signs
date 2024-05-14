@@ -15,6 +15,9 @@ ipywidgets = "^8.1.2"
 torch = { url = "https://download.pytorch.org/whl/cu121/torch-2.3.0%2Bcu121-cp310-cp310-win_amd64.whl#sha256=002027d18a9c054f08fe9cf7a729e041229e783e065a71349015dcccc9a7137e" }
 torchaudio = { url = "https://download.pytorch.org/whl/cu121/torchaudio-2.3.0%2Bcu121-cp310-cp310-win_amd64.whl#sha256=969a49fb31afd3c0d1c4b01d74514d61c44e25d7de4dbc2c4fec317fe31dc702" }
 torchvision = { url = "https://download.pytorch.org/whl/cu121/torchvision-0.18.0%2Bcu121-cp310-cp310-win_amd64.whl#sha256=4ab207a0f35c8c2a43da91f19ee9248520239633dc8e11a9e4a2e77b076bb9db" }
+opencv-python = "^4.9.0.80"
+opencv-contrib-python = "^4.9.0.80"
+lapx = ">=0.5.2"
 
 [build-system]
 requires = ["poetry-core"]

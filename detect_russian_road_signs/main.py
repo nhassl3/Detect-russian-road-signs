@@ -28,6 +28,13 @@ if __name__ == '__main__':
         device=torch.device('cuda'),  # device: [0] - GPU (required ~4.1GB for 6GB GPU)
     )  # IF YOU ALREADY HAVE THE TRAINED MODEL, DON'T UNCOMMENT THIS LINES [24-29]
 
-    result = neuralnet.draw.predict(model=model, random_images=True, count=14)
-    neuralnet.draw.draw_predicted(predicted=result)
+    ROWS, COLS = 4, 4
+    result = neuralnet.draw.predict(random_images=True, count=ROWS*COLS)
+    neuralnet.draw.draw_predicted(predicted=result, rows=ROWS, cols=COLS)
+
+    neuralnet.draw.show_video(
+        video=str(neuralnet.TEST_DIR / "video/IMG_9002.MOV"),
+        image_size=1984
+    )
+
     logging.info('Finished')
