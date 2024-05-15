@@ -17,7 +17,10 @@ CLASSES = ("Дети, Жилая зона, Въезд запрещён, Усту
 
 
 def download_dataset() -> None:
-    # Download dataset
+    """
+    Download dataset from Roboflow.
+    :return: No return value.
+    """
     # If dataset already exists ignore this step
     if not os.path.exists(WORKING_DIR):
         rf = Roboflow(api_key=API_KEY)  # API KEY in __init__ detect_russian_road_signs module
@@ -32,12 +35,13 @@ def download_dataset() -> None:
         finally:
             shutil.rmtree(DATASET_DIR, ignore_errors=True)
 
-    # Download pretrained weights
+    # Download pretrained weights from ultralytics GitHub page
     if not os.path.exists(WORKING_DIR / 'yolo8s.pt'):
         with requests.get('https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8s.pt') as response:
             with open(WORKING_DIR / "yolo8s.pt", "wb") as file:
                 file.write(response.content)
 
+    # set config to dataset
     if not os.path.exists(CONFIGURATION):
         data = {
             "names": CLASSES,
