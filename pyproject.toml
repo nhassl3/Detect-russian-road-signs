@@ -5,6 +5,10 @@ description = "Neural Network for detecting road signs of the Russian Federation
 authors = ["nhassl3 <matvey.kvasov.05@mail.ru>"]
 readme = "README.md"
 
+[project]
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+
 [tool.poetry.dependencies]
 python = ">=3.10,<3.11"
 matplotlib = "^3.8.4"
