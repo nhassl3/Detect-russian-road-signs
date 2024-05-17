@@ -1,5 +1,6 @@
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Fantaz1er/detect-russian-road-signs)![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django)![GitHub License](https://img.shields.io/github/license/Fantaz1er/detect-russian-road-signs)
 # Detect-Russian-Road-Signs
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Fantaz1er/detect-russian-road-signs)![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django)![GitHub License](https://img.shields.io/github/license/Fantaz1er/detect-russian-road-signs)
+
 ![Logo](https://cdn-icons-png.flaticon.com/512/6707/6707424.png)
 
 ## Version  
